@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay  loop id="myVideo">
+  <source src="파파로티.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>파파로티</h1>
+  <p>인기만 많은 놈 ‘치호’ 
+        한 때 잘 나가던 성악가였지만 지금은 촌구석 예고의 음악 선생인 상진(한석규). 싸늘한 교육열, 까칠함만 충만한 그에게 청천벽력 같은 미션이 떨어진다.
+        천부적 노래 실력을 지녔으나, 일찍이 주먹세계에 입문한 건달 장호(이제훈)를 가르쳐 콩쿨에서 입상 하라는 것. 
+        사사건건 무시하는 쌤 상진의 태도에 발끈하는 장호. 그래도 꿈을 포기할 수 없는 장호는 험난하고 까칠한 상진과의 관계를 이어가는데...
+         </p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>

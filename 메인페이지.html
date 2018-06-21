@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <title>
+                    
+                영화 리뷰 사이트
+                 
+            </title>
+
+    <center>
+            <h1>영화 리뷰 사이트</h1>
+        </center>
+        <style>
+         * {box-sizing: border-box;}
+nav {
+    float: left;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fp{
+    position: relative ;
+    overflow: auto;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+            
+             
+</head>
+<body>
+    
+        <div class="topnav">
+             
+                <a class="active" a href="메인페이지.html">Home</a>
+                <a href="코미디 페이지.html">코미디</a>
+                <a href="멜로페이지.html">멜로</a>
+                <a href="드라마 페이지.html">드라마</a>
+                <a href="판타지 페이지.html">판타지</a>
+                <div class="search-container">
+                  <form action="/action_page.php">
+                    <div class="fp">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                  </form>
+                </div>
+                </div>
+              </div>
+            
+          <center>
+        <img class="mySlides" src="스물.jpg"
+        style="width:30%; ">
+        <img class="mySlides" src="해리포터.jpg"
+        style="width:30%; ">
+        <img class="mySlides" src="더폰.jpg"
+        style="width:30%; ">
+        <img class="mySlides" src="목소리의 형태.jpg"
+        style="width:30%; ">
+        <img class="mySlides" src="전우치.jpg"
+        style="width:30%; ">
+        </center>
+      
+        
+      
+      
+      
+      <script>
+      // Automatic Slideshow - change image every 3 seconds
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+      }
+      </script>
+    </div>  
+      
+        
+            
+                    
+                    <ul class="section">
+                            <div style="float:left;">
+                                
+                                    
+                            <h2>장르별 추천작</h2>
+                            <li>
+                                <a href="코미디"><img src="스물.jpg"border="1" width="200" height="130" alt="welcome" tytle="클릭하세요"></a>
+                                <br/>
+                                <a href="#">코미디</a>
+                            </li>
+                                <li>
+                                <a href="멜로"><img src="그시절 우리가 좋아했던 소녀.jpg"border="1" width="200" height="130" alt="welcome" tytle="클릭하세요"></a>
+                                <br/>
+                                <a href="#">멜로</a>
+                            </li>
+                                <li>
+                                <a href="드라마"><img src="7번방의 선물.jpg"border="1" width="200" height="130" alt="welcome" tytle="클릭하세요"></a>
+                                <br/>
+                                <a href="#">드라마</a>
+                            </li>
+                                <li>
+                                <a href="스릴러"><img src="더폰.jpg"border="1" width="200" height="130" alt="welcome" tytle="클릭하세요"></a>
+                                 <br/> 
+                                <a href="#">스릴러</a>
+                            </li>
+                                <li>
+                                <a href="공포"><img src="곤지암.jpg"border="1" width="200" height="130" alt="welcome" tytle="클릭하세요"></a>
+                                <br/>
+                                <a href="#">공포</a>
+                            </li>
+                                <li>
+                                <a href="애니메이션"><img src="목소리의 형태.jpg"border="1" width="200" height="130" alt="welcome" tytle="클릭하세요"></a>
+                                <br/>
+                                <a href="#">애니메이션</a>
+                            </li>
+                                <li>
+                                <a href="액션"><img src="신세계.jpg"border="1" width="200" height="130" alt="welcome" tytle="클릭하세요"></a>
+                                <br/>
+                                <a href="#">액션</a>
+                            </li>
+                                <li>
+                                <a href="판타지"><img src="인피니티 워.jpg"border="1" width="200" height="130" alt="welcome" tytle="클릭하세요"></a>
+                                <br/>
+                                <a href="판타지 페이지.html" target="blank">판타지</a>
+                            </li>
+                            
+
+
+
+
+
+                            </li>
+                </div>
+                        
+                        
+                        
+        </nav>
+    </div>
+   
+
+
+</body>
+
+</html>
